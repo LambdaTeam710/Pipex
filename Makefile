@@ -17,9 +17,11 @@ $(NAME): $(OBJS) libft/libft.a
 
 clean:
 	rm -f $(OBJS)
+	$(MAKE) -C libft clean
 
 fclean: clean
 	rm -f $(NAME)
+	$(MAKE) -C libft fclean
 
 re:fclean all
 

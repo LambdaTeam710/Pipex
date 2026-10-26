@@ -1,0 +1,15 @@
+# Compiled Object Files
+*.o
+
+# Compiled Libraries
+*.a
+
+#Executables
+a.out
+main
+test_*
+pipex
+
+# OS generated files
+.DS_Store
+*~

@@ -1,4 +1,4 @@
-#include "../pipex.h"
+include "pipex.h"
 
 int	main(int	argc, char	**argv, char	**envp)
 {
@@ -7,7 +7,8 @@ int	main(int	argc, char	**argv, char	**envp)
 		write(STDERR_FILENO, "Usage: ./pipex file1 cmd1 cmd2 file2\n", 37);
 		return (1);
 	}
-
-	run_pipex(argv, envp);
-	return (0);
+	if (argc == 5)
+	{
+		return (0);
+	}
 }

@@ -6,7 +6,7 @@ OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
-libft/libft.a:
+libft/libft.a: libft/*.c libft/*.h libft/Makefile
 	$(MAKE) -C libft
 
 $(NAME): $(OBJS) libft/libft.a

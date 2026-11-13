@@ -5,6 +5,15 @@
 #define SUCCESS 0
 #define FAILURE 1
 
+//Pipex Data Strcut
+typedef struct s_pipex
+{
+	char	*infile;
+	char	*cmd1;
+	char	*cmd2;
+	char	*outfile;
+} t_pipex;
+
 //System Headers & Custom Inclusion
 #include "libft/libft.h"
 #include <unistd.h>
